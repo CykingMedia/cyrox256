@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrox - DJ | Designer | Coder | Songwriter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+        header nav {
+            background-color: #111;
+            padding: 1em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta-button {
+            background: #0077ff;
+            color: white;
+            padding: 0.7em 1.5em;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1em;
+        }
+        section {
+            padding: 3em 2em;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .service, .portfolio-item, .testimonial {
+            background: white;
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #333;
+            animation: typing 3s steps(30, end), blink 0.8s infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #333; }
+        }
+        .dark-mode {
+            background: #121212;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1 class="typewriter">Welcome to My Creative World</h1>
+    <p>I'm Cyrox, a DJ, Graphics Designer, Programmer, and Songwriter.</p>
+    <a href="#contact" class="cta-button">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I blend beats, designs, code, and lyrics to create unique experiences.</p>
+    <h3>Skills:</h3>
+    <ul>
+        <li>DJing & Music Production</li>
+        <li>Graphics Design (Logos, Branding)</li>
+        <li>Programming (Web Development, Apps)</li>
+        <li>Songwriting & Composition</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>My Services</h2>
+    <div class="service">
+        <h3>DJ Services</h3>
+        <p>Custom mixes, event performances, and more.</p>
+    </div>
+    <div class="service">
+        <h3>Graphics Design</h3>
+        <p>Logos, branding packages, and custom art.</p>
+    </div>
+    <div class="service">
+        <h3>Programming</h3>
+        <p>Websites, applications, and automation tools.</p>
+    </div>
+    <div class="service">
+        <h3>Songwriting</h3>
+        <p>Lyrics, melodies, and full tracks for all genres.</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+        <h3>My Music</h3>
+        <audio controls>
+            <source src="track1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="portfolio-item">
+        <h3>My Designs</h3>
+        <div class="gallery">
+            <img src="design1.jpg" alt="Design 1">
+            <img src="design2.jpg" alt="Design 2">
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <h3>My Code</h3>
+        <p>Check my work on <a href="https://github.com/your-profile">GitHub</a>.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<section id="login">
+    <h2>Login / Register</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Register here</a></p>
+</section>
+
+<a href="https://wa.me/2567XXXXXXXX" class="whatsapp-float" target="_blank">💬 Chat on WhatsApp</a>
+
+<footer>
+    <p>&copy; 2025 Cyrox. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
